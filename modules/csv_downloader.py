@@ -44,7 +44,7 @@ def error_csv(file, csv_dir, args_y):
             else:
                 FILE_URL = str(OID_URL + file)
 
-            FILE_PATH = os.path.join(csv_dir, file)
+            FILE_PATH = os.path.join(csv_dir,file[2:])
             save(FILE_URL, FILE_PATH)
             print('\n' + bc.OKBLUE + "File {} downloaded into {}.".format(file, FILE_PATH) + bc.ENDC)
 

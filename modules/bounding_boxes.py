@@ -15,7 +15,7 @@ def bounding_boxes_images(args, DEFAULT_OID_DIR):
 		dataset_dir = os.path.join(DEFAULT_OID_DIR, args.Dataset)
 		csv_dir = os.path.join(DEFAULT_OID_DIR, 'csv_folder')
 
-	name_file_class = 'v5/class-descriptions-boxable.csv'
+	name_file_class = 'class-descriptions-boxable.csv'
 	CLASSES_CSV = os.path.join(csv_dir, name_file_class)
 
 	if args.command == 'downloader':
@@ -32,7 +32,7 @@ def bounding_boxes_images(args, DEFAULT_OID_DIR):
 			args.multiclasses = 0
 
 		folder = ['train', 'validation', 'test']
-		file_list = ['v6/oidv6-train-annotations-bbox.csv', 'v5/validation-annotations-bbox.csv', 'v5/test-annotations-bbox.csv']
+		file_list = ['v6/oidv6-train-annotations-bbox.csv', 'validation-annotations-bbox.csv', 'v5/test-annotations-bbox.csv']
 
 		if args.classes[0].endswith('.txt'):
 			with open(args.classes[0]) as f:
