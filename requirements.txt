@@ -1,9 +1,9 @@
-pandas
-numpy
-awscli
+pip3 install pandas
+pip3 install numpy
+pip3 install awscli
 
-urllib3
+pip3 install urllib3
 
-tqdm
+pip3 install tqdm
 
-opencv-python
+pip3 install opencv-python
