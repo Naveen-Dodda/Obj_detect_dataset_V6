@@ -32,7 +32,7 @@ def bounding_boxes_images(args, DEFAULT_OID_DIR):
 			args.multiclasses = 0
 
 		folder = ['train', 'validation', 'test']
-		file_list = ['v6/oidv6-train-annotations-bbox.csv', 'validation-annotations-bbox.csv', 'v5/test-annotations-bbox.csv']
+		file_list = ['oidv6-train-annotations-bbox.csv', 'validation-annotations-bbox.csv', 'test-annotations-bbox.csv']
 
 		if args.classes[0].endswith('.txt'):
 			with open(args.classes[0]) as f:
